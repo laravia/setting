@@ -1,0 +1,51 @@
+{
+    "minimum-stability": "dev",
+    "name": "laravia/setting",
+    "description": "laravia package setting for heart",
+    "license": "license",
+    "authors": [
+        {
+            "name": "laravia",
+            "email": "code@laravia.art",
+            "homepage": "https://laravia.art"
+        }
+    ],
+    "homepage": "https://laravia.art",
+    "keywords": [
+        "Laravel",
+        "Laravia",
+        "Setting"
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravia\\Setting\\App\\": "./app",
+            "Laravia\\Setting\\Database\\": "./database",
+            "Laravia\\Setting\\Database\\Seeders\\": "./database/seeders"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravia\\Setting\\App\\": "./app",
+            "Laravia\\Setting\\Database\\": "./database",
+            "Laravia\\Setting\\Database\\Seeders\\": "./database/seeders",
+            "Laravia\\Setting\\Tests\\": "./tests"
+        }
+    },
+    "scripts": {
+        "post-root-package-update": []
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravia\\Setting\\App\\Providers\\SettingServiceProvider"
+            ],
+            "aliases": {
+                "LaraviaSetting": "Laravia\\Setting\\App\\Setting"
+            }
+        }
+    }
+}
