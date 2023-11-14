@@ -2,7 +2,7 @@
 
 $config['setting']['links'] = [
     [
-        'name' => 'Setting',
+        'name' => 'Settings',
         'icon' => 'bi.wrench-adjustable',
         'route' => 'laravia.setting.list',
         'sort' => 10000
